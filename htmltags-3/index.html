@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="#" method="post" enctype="multipart/form-data">
+        <div>
+            <p>Им'я</p>
+            <input placeholder="Имя" tabindex="1" name="username" type="text" />
+        </div>
+        <div>
+            <p>Пароль</p>
+            <input tabindex="2" name="userpass" type="password" />
+        </div>
+        <div>
+            <p>Телефон</p>
+            <input tabindex="3" name="userphone" type="tel" />
+        </div>
+        <div>
+            <p>Стать</p>
+            <div>
+                <input tabindex="4" checked type="radio" name="gender" value="male" /> Чоловіча
+            </div>
+            <div>
+                <input tabindex="4" type="radio" name="gender" value="female" /> Жіноча
+            </div>
+        </div>
+        <div>
+            <p>Власність</p>
+            <div>
+                <input tabindex="5" checked type="checkbox" name="bike" value="yes" /> Велосипед
+            </div>
+            <div>
+                <input tabindex="6" type="checkbox" name="car" value="yes" /> Машина
+            </div>
+            <div>
+                <input tabindex="7" disabled type="checkbox" name="house" value="yes" /> Дім
+            </div>
+        </div>
+        <div>
+            <p>Додаткова інформація</p>
+            <textarea tabindex="8" name="text"></textarea>
+        </div>
+        <div>
+            <p>Додати фото</p>
+            <input tabindex="9" type="file" />
+        </div>
+        <div>
+            <p>Улюблений колір</p>
+            <select tabindex="10" name="color">
+                <option value="red">Червоний</option>
+                <option value="green">Зелений</option>
+                <option selected value="yellow">Жовтий</option>
+            </select>
+        </div>
+        <div>
+            <p>Дії</p>
+            <button tabindex="11" type="submit">Відправити</button>
+            <button tabindex="12" type="reset">Стерти (очистити)</button>
+        </div>
+    </form>
+</body>
+</html>
