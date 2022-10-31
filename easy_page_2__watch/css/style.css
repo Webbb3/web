@@ -1,0 +1,220 @@
+/*start minimal reset css */
+
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+}
+  
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+  
+body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+}
+  
+ol, ul {
+    list-style: none;
+}
+  
+/* stop reset css */
+
+
+@font-face {
+	font-family: 'LeagueSpartan';
+	src: url('..//LeagueSpartan-Light.eot');
+	src: local('☺'), url('../fonts/LeagueSpartan-Light.woff') format('woff'), url('../fonts/LeagueSpartan-Light.ttf') format('truetype'), url('../fonts/LeagueSpartan-Light.svg') format('svg');
+	font-weight: 300;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'LeagueSpartan';
+	src: url('../fonts/LeagueSpartan-Regular.eot');
+	src: local('☺'), url('../fonts/LeagueSpartan-Regular.woff') format('woff'), url('../fonts/LeagueSpartan-Regular.ttf') format('truetype'), url('../fonts/LeagueSpartan-Regular.svg') format('svg');
+	font-weight: 400;
+	font-style: normal;
+}
+
+body {
+    font-family: 'LeagueSpartan', sans-serif;
+}
+
+
+.header-container {
+    display: flex;
+    width: 1440px;
+    padding-top: 104px;
+    padding-left: 133px;
+    padding-right: 133px;
+    padding-bottom: 168px;
+    background-color: #F8F8F8;
+    margin: 0 auto;
+}
+
+.header-title {
+    margin-bottom: 53px;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 186%;
+    color: #161515;
+}
+
+.header-subtitle {
+    margin-bottom: 43px;
+    font-weight: 300;
+    font-size: 250px;
+    line-height: 230px;
+    color: #272727;
+}
+
+.header-description {
+    margin-bottom: 61px;
+    font-weight: 300;
+    font-size: 32px;
+    line-height: 155%;
+    color: #161515;
+    max-width: 575px;
+}
+
+.buy-wrapper {
+    display: flex;
+}
+
+.buy-link {
+    display: block;
+    width: 278px;
+    height: 82px;
+    background-color: rgba(22, 21, 21, 1);
+    text-decoration: none;
+    font-weight: 300;
+    font-size: 32px;
+    text-align: center; /* выравнивание по вертикали*/
+    line-height: 82px;  /* вырвнивание по горизонтали - указал размер высоты кнопки */
+    color: #FFFFFF;  
+}
+
+.price {
+    display: block;
+    width: 143px;
+    height: 82px;
+    background-color: #FFFFFF; 
+    font-weight: 300;
+    font-size: 32px;
+    text-align: center; /* выравнивание по вертикали*/
+    line-height: 82px;  /* вырвнивание по горизонтали - указал размер высоты кнопки */
+    color: #272727; 
+}
+
+.header-img {
+    display: block;
+    width: 408px;
+    margin-top: -100px;
+    padding-left: 50px;
+}
+
+.popular-title {
+    margin-top: 43px;
+    text-align: center;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 45px;
+}
+
+.models-title {
+    text-align: center;
+    font-weight: 400;
+    font-size: 72px;
+    line-height: 81px;
+}
+
+.item-wrapper {
+    margin: 0 auto;
+    width: 417px;
+}
+
+.item-img-wrapper {
+    margin-bottom: 67px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 417px;
+    height: 630px;
+    background-color: #f8f8f8;    
+}
+
+.item-title {
+    margin-bottom: 17px;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 29px;
+    text-align: center;
+}
+
+.item-description {
+    font-weight: 300;
+    font-size: 32px;
+    line-height: 50px;
+    text-align: center;
+    width: 531px;
+    margin: 0 auto;
+    margin-bottom: 85px;
+}
+
+.item-description-sw12 {
+    font-weight: 300;
+    font-size: 32px;
+    line-height: 50px;
+    text-align: center;
+    width: 510px;
+    margin: 0 auto;
+    margin-bottom: 59px;
+}
+
+
+
+.product-description-wrapper {
+    margin: 0 auto;
+    width: 515px;
+}
+
+.line-product-description{
+    height: 1px;
+    width: 178px;
+    background-color: rgba(112, 112, 112, 1);
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 49px;
+}
+
+.product-description-title {
+    text-align: center;
+    margin-bottom: 9px;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 60px;
+}
+
+.product-description {
+    text-align: center;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 41px;
+    margin-bottom: 142px
+}
+
+.link-product-description {
+    color: rgba(187, 139, 93, 1);
+}
+
+
+
+
+
+
+
+
+
+

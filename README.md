@@ -1,2 +1,3 @@
 # web
-my 2nd course
+my study by my owm
+
