@@ -1,3 +1,3 @@
 # web
-my study by my owm
+my study on my owm
 
