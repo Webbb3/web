@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700&display=swap&subset=cyrillic-ext');
+
+@font-face {
+	font-family: 'PFDinTextCondPro';
+	src: url('../fonts/pfdintextcondpro-regular.eot');
+	src: local('☺'), url('../fonts/pfdintextcondpro-regular.woff') format('woff'), url('../fonts/pfdintextcondpro-regular.ttf') format('truetype'), url('../fonts/pfdintextcondpro-regular.svg') format('svg');
+	font-weight: normal;
+	font-style: italic;
+}
+@font-face {
+	font-family: 'PFDinTextCondPro';
+	src: url('../fonts/pfdintextcondpro-medium.eot');
+	src: local('☺'), url('../fonts/pfdintextcondpro-medium.woff') format('woff'), url('../fonts/pfdintextcondpro-medium.ttf') format('truetype'), url('../fonts/pfdintextcondpro-medium.svg') format('svg');
+	font-weight: 500;
+	font-style: normal;
+}
+
+// Файл обнуляющих стилей
+@import "nullstyle.scss";
+
+.textoriginal{
+	margin: 0px 0px 30px 0px;
+	font-size: 30px;
+	line-height: 35px;
+	p{margin: 0px 0px 30px 0px;}
+}
+.text{
+	font-family: "PT Sans";
+	font-size: 30px;
+	line-height: 35px;
+	margin: 0px 0px 30px 0px;
+	p{margin: 0px 0px 30px 0px;}
+}
+.text-PFDin {
+	font-family: 'PFDinTextCondPro';
+	font-size: 30px;
+	line-height: 35px;
+	margin: 0px 0px 30px 0px;
+	p{margin: 0px 0px 30px 0px;}
+}
+.text-PFDinMedium {
+	font-family: 'PFDinTextCondPro';
+	font-weight: 500;
+	font-size: 30px;
+	font-style: italic;
+	line-height: 35px;
+	margin: 0px 0px 30px 0px;
+	p{margin: 0px 0px 30px 0px;}
+}
