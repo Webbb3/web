@@ -1,0 +1,169 @@
+@charset "UTF-8";
+/* Обнуление */
+@import url("https://fonts.googleapis.com/css?family=Roboto:regular,700,900&display=swap");
+*,
+*::before,
+*::after {
+	padding: 0;
+	margin: 0;
+	border: 0;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+a {
+	text-decoration: none;
+}
+
+ul,
+ol,
+li {
+	list-style: none;
+}
+
+img {
+	vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: inherit;
+	font-size: inherit;
+}
+
+html,
+body {
+	height: 100%;
+}
+
+body {
+	line-height: 1;
+	background-color: #333;
+	color: #fff;
+	font-family: Roboto;
+}
+
+/* ------------------ */
+.wrapper {
+	min-height: 100%;
+	overflow: hidden;
+}
+
+/* ------------------ */
+/* Стили блока */
+.example {
+	padding: 80px 0;
+}
+
+.example__container {
+	padding: 0px 15px;
+	margin: 0px auto;
+	max-width: 65.625rem;
+	position: relative;
+}
+
+@media (min-width: 48em) {
+	.example__container::before {
+		content: "";
+		background: url("../img/decor.svg") 0 0/100% no-repeat;
+		position: absolute;
+		right: 0;
+		width: 14.57%;
+		padding-top: 22.95%;
+		top: 50%;
+		-webkit-transform: translate(50%, -50%);
+		transform: translate(50%, -50%);
+	}
+}
+/* Верхняя часть */
+.example__header {
+	margin: 0px 0px 25px 0px;
+	max-width: 46.875rem;
+}
+
+.example__sub-title {
+	color: #a989c7;
+	font-weight: 700;
+	text-transform: uppercase;
+	font-size: 0.875rem;
+	line-height: 1.7;
+	margin: 0px 0px 1.07em 0px;
+}
+
+.example__title {
+	color: #93b482;
+	text-transform: uppercase;
+	font-weight: 900;
+	font-size: 2.625rem;
+	line-height: 1.19;
+	margin: 0px 0px 0.38em 0px;
+	letter-spacing: 0.12em;
+}
+
+@media (max-width: 48em) {
+	.example__title {
+		font-size: 2rem;
+	}
+}
+
+.example__text {
+	line-height: 1.5;
+}
+
+/* Структура карточек */
+.example__items {
+	/*
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 24px;
+  margin: 0px -12px;
+  */
+	display: -ms-grid;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(18.125rem, 1fr));
+	gap: 24px;
+}
+
+.example__item {
+	/*
+  padding: 0px 12px;
+  // Получаем размер в %
+  // делим общую щирину 100% на три
+  flex: 1 1 33.333%;
+  // Переводим в REM
+  // делим нужный размер (290px)
+  // на 16 (размер шрифта по умолчанию)
+  min-width: 18.125rem;
+  */
+}
+
+/* Карточка */
+.item-example {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-column-gap: 23px;
+	-moz-column-gap: 23px;
+	column-gap: 23px;
+}
+
+.item-example__icon {
+	-webkit-box-flex: 0;
+	-ms-flex: 0 0 63px;
+	flex: 0 0 63px;
+}
+
+.item-example__title {
+	color: #f2726f;
+	font-weight: 900;
+	font-size: 1.5rem;
+	margin: 0px 0px 0.45em 0px;
+}
+
+.item-example__text {
+	line-height: 1.5;
+}
