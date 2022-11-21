@@ -1,0 +1,242 @@
+/*Обнуление*/
+*,
+*:before,
+*:after {
+	padding: 0;
+	margin: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+html,
+body {
+	height: 100%;
+	background-color: #333;
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+	color: #fff;
+	font-size: 16px;
+	line-height: 24px;
+}
+a {
+	color: #794f45;
+}
+h1 {
+	font-size: 40px;
+	margin: 0px 0px 50px 0px;
+}
+h2 {
+	font-size: 30px;
+	margin: 0px 0px 20px 0px;
+}
+p {
+	margin: 20px 0;
+}
+.wrapper {
+	min-height: 100%;
+	overflow: hidden;
+}
+
+.content {
+	padding: 30px 3%;
+}
+.content__block {
+	margin: 0px 0px 50px 0px;
+}
+
+/* Основные стили */
+
+/* 2D */
+.content__2D .content__block div {
+	display: flex;
+	text-transform: uppercase;
+	justify-content: center;
+	align-items: center;
+	letter-spacing: 1px;
+	text-align: center;
+	width: 150px;
+	height: 150px;
+	transition: all 0.8s ease 0s;
+}
+
+/* translate */
+.content__translate {
+	background-color: #794f45;
+}
+.content__translate:hover {
+	transform: translateY(50px);
+}
+
+/* scale */
+.content__scale {
+	transform: scale(1, 1);
+	background-color: #77608d;
+}
+.content__scale:hover {
+	transform: scale(1, -1);
+}
+
+/* rotate  */
+.content__rotate {
+	transform: rotate(0deg);
+	background-color: #7a956b;
+}
+.content__rotate:hover {
+	transform: rotate(0deg);
+}
+
+/* skew */
+.content__skew {
+	transform: skew(0deg, 0deg);
+	background-color: #794f45;
+}
+.content__skew:hover {
+	transform: skew(10deg, 0deg);
+}
+/* matrix */
+.content__matrix {
+	transform: matrix(1, 0, 0, 1, 0, 0);
+	background-color: #77608d;
+}
+/* multi */
+.content__multi {
+	background-color: #7a956b;
+	transform: translate(50px, 50px) scale(0.5) rotate(45deg);
+}
+
+/* transform-origin */
+.content__transform-origin {
+	background-color: #794f45;
+	transform-origin: 0 0;
+	transform: rotate(0deg);
+}
+.content__transform-origin:hover {
+	transform: rotate(-30deg);
+}
+
+/* 3D */
+.content__3D .content__wrapper3d {
+	width: 150px;
+	height: 150px;
+	background-color: rgba(255, 255, 255, 0.1);
+
+	perspective-origin: center;
+	perspective: 400px;
+}
+.content__3D .content__wrapper3d div {
+	display: flex;
+	text-transform: uppercase;
+	justify-content: center;
+	align-items: center;
+	letter-spacing: 1px;
+	text-align: center;
+	transition: all 0.8s ease 0s;
+	width: 150px;
+	height: 150px;
+}
+
+/* perspective */
+.content__perspective {
+	background-color: #7a956b;
+	transform: rotateX(50deg);
+}
+.content__perspective:hover {
+}
+
+/* translate3D */
+.content__translate3D {
+	transform: translate3D(0px, 0px, 0px);
+	background-color: #794f45;
+}
+.content__translate3D:hover {
+	transform: translate3D(20px, 20px, 50px);
+}
+
+/* scale3D */
+.content__scale3D {
+	transform: scale3d(1, 1, 1);
+	background-color: #77608d;
+}
+.content__scale3D:hover {
+	transform: scale3d(2, 2, 5);
+}
+
+/* rotate3D  */
+.content__rotate3d {
+	transform: rotate3d(1, 1, 1, 0deg);
+	background-color: #7a956b;
+}
+.content__rotate3d:hover {
+	transform: rotate3d(1, 1, 1, 45deg);
+}
+
+/* matrix3d */
+.content__matrix3d {
+}
+
+/* Multi3D */
+.content__multi3d {
+	background-color: #794f45;
+	transform: translate3d(20px, 20px, 20px) rotate3d(1, 1, 1, 10deg);
+}
+
+/* transform-style */
+
+.content__transform-style-wrapper {
+	width: 150px;
+	height: 150px;
+	background-color: rgba(255, 255, 255, 0.1);
+	perspective: 400px;
+	transform-style: preserve-3d;
+}
+.content__transform-style {
+	display: flex;
+	text-transform: uppercase;
+	justify-content: center;
+	align-items: center;
+	letter-spacing: 1px;
+	text-align: center;
+	transition: all 0.8s ease 0s;
+	width: 150px;
+	height: 150px;
+	transform: rotateX(0deg);
+	background-color: #7a956b;
+}
+.content__transform-style:hover {
+	transform: rotateX(50deg);
+}
+
+/* Flip */
+.flip {
+}
+.flip__body {
+	position: relative;
+	width: 150px;
+	height: 150px;
+	transition: all 0.8s ease 0s;
+	transform-style: preserve-3d;
+}
+.flip__front,
+.flip__back {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.flip__front {
+	z-index: 2;
+	transform: rotateY(0deg);
+	background-color: #77608d;
+
+	backface-visibility: hidden;
+}
+.flip__back {
+	transform: rotateY(-180deg);
+	background-color: rgba(121, 79, 69, 0.5);
+}
+
+.flip:hover .flip__body {
+	transform: rotateY(-180deg);
+}
