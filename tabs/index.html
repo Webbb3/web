@@ -1,0 +1,46 @@
+<!-- Сообщаем браузеру как стоит обрабатывать эту страницу -->
+<!DOCTYPE html>
+<!-- Оболочка документа, указываем язык содержимого -->
+<html lang="ru">
+  <!-- Заголовок страницы, контейнер для других важных данных (не отображается) -->
+  <head>
+    <!-- Заголовок страницы в браузере -->
+    <title>Табы на CSS</title>
+    <!-- Подключаем CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Кодировка страницы -->
+    <meta charset="UTF-8">
+    <!-- Адаптив -->
+    <meta name="viewport" content="width=device-width">
+  </head>
+  <!-- Отображаемое тело страницы -->
+  <body>
+    <!-- Оболочка для демонстрации -->
+    <div class="wrapper">
+      <!-- Контент -->
+      <div class="content">
+        <div class="tabs">
+          <nav class="tabs__items">
+            <a href="#tab_01" class="tabs__item"><span>Первая вкладка</span></a>
+            <a href="#tab_02" class="tabs__item"><span>Вторая вкладка</span></a>
+            <a href="#tab_03" class="tabs__item"><span>Третья вкладка</span></a>
+          </nav>
+          <div class="tabs__body">
+            <div id="tab_01" class="tabs__block">
+              Первая вкладка. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim laudantium esse modi aut in recusandae explicabo, doloremque animi sapiente hic nobis ducimus minima distinctio deleniti tempora deserunt cumque amet consequatur.
+            </div>
+            <div id="tab_02" class="tabs__block">
+              Вторая вкладка. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim laudantium esse modi aut in recusandae explicabo, doloremque animi sapiente hic nobis ducimus minima distinctio deleniti tempora deserunt cumque amet consequatur. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim laudantium esse modi aut in recusandae explicabo, doloremque animi sapiente hic nobis ducimus minima distinctio deleniti tempora deserunt cumque amet consequatur.
+            </div>
+            <div id="tab_03" class="tabs__block">
+              Третья вкладка. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim laudantium esse modi aut in recusandae explicabo, doloremque animi sapiente hic nobis ducimus minima distinctio deleniti tempora deserunt cumque amet consequatur.
+            </div>
+          </div>
+        </div>
+        <div class="text">
+
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
