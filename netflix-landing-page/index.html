@@ -1,0 +1,64 @@
+<!-- Ми повідомляємо браузеру, як обробити цю сторінку -->
+<!DOCTYPE html>
+<!-- Оболонка документа вказує на мову вмісту -->
+<html lang="en">
+  <!-- Назва сторінки, контейнер для інших важливих даних (не відображається) -->
+  <head>
+    <!-- Назва сторінки в браузері -->
+    <title>Netflix Page</title>
+    <!-- Підключаємо CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Підключаємо favicon (анімований тільки у Firefox)-->
+    <link rel="shortcut icon" href="img/favicon.ico" />
+    <!-- Адаптація -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Кодування сторінок -->
+    <meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+  </head>
+  <!-- Відображене тіло сторінки -->
+<body>
+  <header>
+    <a href="#" class="logo"><img src="img/logo.png"></a>
+    <ul class="navigation">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">TV Shows</a></li>
+      <li><a href="#">Movies</a></li>
+      <li><a href="#">Latest</a></li>
+      <li><a href="#">My List</a></li>
+    </ul>
+    <div class="search">
+      <input type="text" placeholder="Search">
+      <i class="fas fa-search"></i>
+    </div>
+  </header>
+
+  <div class="banner">
+    <img src="img/bg.jpg" class="bg">
+
+  <div class="content">
+    <img src="img/name.png" class="movieTitle">
+    <h4>
+      <span>2022</span>
+      <span><i>13+</i></span>
+      <span>1 season</span>
+      <span>TV Mysteries</span>
+    </h4>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam ipsam maiores illo iure laboriosam quaerat vitae ad, debitis hic corporis sequi optio facere nostrum obcaecati earum, perferendis impedit. Quod, aspernatur.
+    </p>
+
+      <div class="buttons">
+        <a href="#"><i class="fa fa-play" aria-hidden="true"></i> Play</a>
+        <a href="#"><i class="fa fa-plus" aria-hidden="true"></i> My List</a>
+      </div>
+    </div>
+    <a class="play" onclick="toggleVideo()"><img src="img/play.png">Watch Trailer</a>
+  </div>
+
+  <div class="trailer">
+    <video src="videos/video.mp4" controls="true"></video>
+    <img src="img/close.png" class="close" onclick="toggleVideo()">
+  </div>
+</body>
+<script src="js/script.js"></script>
+</html>
