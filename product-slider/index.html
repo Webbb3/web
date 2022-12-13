@@ -1,36 +1,42 @@
 <!-- Ми повідомляємо браузеру, як обробити цю сторінку -->
 <!DOCTYPE html>
 <!-- Оболонка документа вказує на мову вмісту -->
-<html lang="ua">
+<html lang="en">
   <!-- Назва сторінки, контейнер для інших важливих даних (не відображається) -->
   <head>
     <!-- Назва сторінки в браузері -->
-    <title>my projects</title>
+    <title>Product Slider</title>
     <!-- Підключаємо CSS -->
     <link rel="stylesheet" href="css/style.css" />
     <!-- Підключаємо favicon (анімований тільки у Firefox)-->
-    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="shortcut icon" href="img/favicon.ico" />
     <!-- Адаптація -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Кодування сторінок -->
     <meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
   </head>
   <!-- Відображене тіло сторінки -->
+</head>
 <body>
-    <br>
-    <br>
-    <a href="easy_page_1/easy page/index.html">Go to 2nd Page</a>
-    <br>
-    <br>
-    <a href="easy_page_2__watch/index.html">Click to buy watch</a>
-    <br>
-    <br>
-    <a href="coca-cola-UI/index.html">Coca-Cola Card</a>
-    <br>
-    <br>
-    <a href="netflix-landing-page/index.html">Netflix Landing</a>
-    <br>
-    <br>
-    <a href="product-slider/index.html">Sneakers Slider</a>
+  <div class="container">
+    <ul class="thumb">
+      <li onmouseover="changeImageSrc('img/shoe1.png')"><img src="img/shoe1.png" alt="no load" ></li>
+      <li onmouseover="changeImageSrc('img/shoe2.png')"><img src="img/shoe2.png" alt="no load" ></li>
+      <li onmouseover="changeImageSrc('img/shoe3.png')"><img src="img/shoe3.png" alt="no load" ></li>
+    </ul>
+    <div class="imgbox">
+      <h2>Сhoose sneakers</h2>
+      <img src="img/shoe1.png" class="shoesss">
+      <ul class="size">
+        <span>Size</span>
+        <li>7</li>
+        <li>8</li>
+        <li>9</li>
+        <li>10</li>
+      </ul>
+        <a href="#" class="btn">Add to Cart</a>
+    </div>
+  </div>
+  <script src="js/script.js"></script>
 </body>
 </html>
