@@ -1,0 +1,134 @@
+@import "https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,500;1,600;1,700;1,800;1,900&display=swap";
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	background: #e8e8e8 url('./bg.jpg') 0 0/cover no-repeat;
+}
+.card {
+	position: relative;
+	width: 600px;
+	height: 350px;
+	background: rgba(0, 0, 0, 0);
+	border-radius: 20px;
+	display: flex;
+	align-items: center;
+	border-radius: 20px;
+	transition: .5s;
+	.circle {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		border-radius: 20px;
+		overflow: hidden;
+		&::before {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background: #181818;
+			clip-path: circle(120px at center);
+			transition: .5s;
+		}
+	}
+	&:hover {
+		.circle {
+			&:before {
+				background: #da2528;
+				clip-path: circle(400px at center);
+			}
+		}
+		img {
+			left: 72%;
+			height: 500px;
+		}
+		.content {
+			left: 0;
+			opacity: 1;
+			visibility: visible;
+		}
+	}
+	img {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%,-50%);
+		height: 300px;
+		pointer-events: none;
+		transition: 0.5s;
+	}
+	.content {
+		position: relative;
+		width: 50%;
+		left: 20%;
+		padding: 20px 20px 20px 40px;
+		transition: 0.5s;
+		opacity: 0;
+		visibility: hidden;
+		h2 {
+			color: #fff;
+			text-transform: uppercase;
+			font-size: 2em;
+			line-height: 1em;
+		}
+		p {
+			color: #fff;
+		}
+		a {
+			position: relative;
+			padding: 10px 20px;
+			border-radius: 10px;
+			background: #fff;
+			color: #111;
+			margin-top: 10px;
+			display: inline-block;
+			text-decoration: none;
+			font-weight: 700;
+			transition-duration: 0.4s;
+			&:hover {
+				background-color: #272727;
+				color: rgb(255, 255, 255);
+			}
+		}
+	}
+}
+@media (max-width: 991px) {
+	.card {
+		width: auto;
+		max-width: 350px;
+		align-items: flex-start;
+		&:hover {
+			height: 600px;
+			img {
+				top: 70%;
+				left: 50%;
+				height: 300px;
+			}
+		}
+		.content {
+			width: 100%;
+			left: 0;
+			padding: 30px;
+		}
+	}
+}
+@media (max-width: 420px) {
+	.card {
+		.content {
+			width: 100%;
+			left: 0;
+			padding: 20px;
+		}
+	}
+}
