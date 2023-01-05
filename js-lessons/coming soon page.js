@@ -10,7 +10,6 @@ let secValue = 11,
 
 const timeFunction = setInterval(() => {
   secValue--;
-
   if (secValue === 0) {
     minValue--;
     secValue = 60;
@@ -23,7 +22,6 @@ const timeFunction = setInterval(() => {
     dayValue--;
     hourValue = 24;
   }
-
   if (dayValue === 0) {
     clearInterval(timeFunction);
   }
